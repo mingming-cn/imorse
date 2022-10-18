@@ -1,12 +1,12 @@
 {
-  "name": "xmorse",
-  "officialName": "xmorse",
+  "name": "imorse",
+  "officialName": "imorse",
   "version": "1.0.0",
-  "description": "xmorse is a pure javascript(~1.5 kb) library for encode / decode morse code messages, unicode supported.",
+  "description": "imorse is a pure javascript(~1.5 kb) library for encode / decode morse code messages, unicode supported.",
   "license": "MIT",
   "main": "lib/index.js",
   "module": "esm/index.js",
-  "browser": "dist/xmorse.min.js",
+  "browser": "dist/imorse.min.js",
   "types": "lib/index.d.ts",
   "files": [
     "lib",
@@ -73,14 +73,14 @@
     }
   },
   "author": {
-    "name": "hustcc",
-    "url": "https://atool.vip/"
+    "name": "mingming-cn",
+    "url": "https://toolb.cn/"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hustcc/xmorse"
+    "url": "https://github.com/mingming-cn/imorse"
   },
   "bugs": {
-    "url": "https://github.com/hustcc/xmorse/issues"
+    "url": "https://github.com/mingming-cn/imorse/issues"
   }
 }

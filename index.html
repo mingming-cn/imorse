@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Xmorse is a pure JavaScript library for encoding/decoding morse code messages, unicode supported.</title>
+  <title>IMorse is a pure JavaScript library for encoding/decoding morse code messages, unicode supported.</title>
   <meta name="keywords" content="morse encode, morse decode, morse unicode" />
-  <meta name="description" content="xmorse is a pure JavaScript library for encoding/decoding morse code messages, unicode supported." />
+  <meta name="description" content="imorse is a pure JavaScript library for encoding/decoding morse code messages, unicode supported." />
   <style type="text/css">
   body {
     max-width: 1000px;
@@ -25,12 +25,12 @@
   </style>
 </head>
 <body>
-  <h1> Xmorse </h1>
+  <h1> IMorse </h1>
   <p>
-    Project <a href="https://github.com/hustcc/xmorse">xmorse</a> is a pure JavaScript (1.5 kb) library for encoding/decoding morse code messages, unicode supported.
+    Project <a href="https://github.com/mingming-cn/imorse">imorse</a> is a pure JavaScript (1.5 kb) library for encoding/decoding morse code messages, unicode supported.
   </p>
   <p>
-    项目 <a href="https://github.com/hustcc/xmorse">xmorse</a> 是一个 JavaScript 开发的摩斯密码编码库(1.5 kb)，可以支持 unicode，例如中文摩斯密码。
+    项目 <a href="https://github.com/mingming-cn/imorse">imorse</a> 是一个 JavaScript 开发的摩斯密码编码库(1.5 kb)，可以支持 unicode，例如中文摩斯密码。
   </p>
 
   <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -59,30 +59,30 @@
 
   <h2> Install </h2>
   <pre class="strong">
-npm install xmorse </pre>
+npm install imorse </pre>
   <p> Then import it. </p>
   <pre>
 // import library use script tag.
-&lt;script type="text/javascript" src="dist/xmorse.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="dist/imorse.min.js"&gt;&lt;/script&gt;
 
 // or ES6 style.
-var WordWidth = require('xmorse');</pre>
+var WordWidth = require('imorse');</pre>
 
   <h3>Usage</h3>
   <pre>
-xmorse.encode('Hello, Xmorse!');
+imorse.encode('Hello, IMorse!');
 // unicode
-xmorse.encode('コンニチハ, セカイ!');
-xmorse.encode('越过长城，走向世界');
+imorse.encode('コンニチハ, セカイ!');
+imorse.encode('越过长城，走向世界');
 
-xmorse.decode('../.-../---');
+imorse.decode('../.-../---');
   </pre>
   <hr />
 
   <p>
-    The code of xmorse hosted on Github, click <a href="https://github.com/hustcc/xmorse">here</a>. Welcome to issue or pull request.
+    The code of imorse hosted on Github, click <a href="https://github.com/mingming-cn/imorse">here</a>. Welcome to issue or pull request.
   </p>
-  <script type="text/javascript" src="dist/xmorse.min.js"></script>
+  <script type="text/javascript" src="dist/imorse.min.js"></script>
   <script type="text/javascript">
     function $_(id) {
       return document.getElementById(id);
@@ -95,14 +95,14 @@ xmorse.decode('../.-../---');
       };
     }
     function encode() {
-      $_('result').innerHTML = xmorse.encode($_('input').value, getoption());
+      $_('result').innerHTML = imorse.encode($_('input').value, getoption());
     }
     function decode() {
-      $_('result').innerHTML = xmorse.decode($_('input').value, getoption()) || 'Morse code is not valid.';
+      $_('result').innerHTML = imorse.decode($_('input').value, getoption()) || 'Morse code is not valid.';
     }
   </script>
   <script>
-    location.href = 'https://atool.vip/morse';
+    location.href = 'https://toolb.cn/morse';
   </script>
 </body>
 </html>

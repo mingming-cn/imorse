@@ -4,7 +4,7 @@ import { DEFAULT_OPTION, STANDARD } from './const';
 // to hex
 function unicodeHexMorse(ch: string): string {
   const r = [];
-  for (var i = 0; i < ch.length; i++) {
+  for (let i = 0; i < ch.length; i++) {
     r[i] = ('00' + ch.charCodeAt(i).toString(16)).slice(-4);
   }
 
@@ -15,7 +15,7 @@ function unicodeHexMorse(ch: string): string {
 
 /**
  * encode: encode string to morse code.
- * - msg: strings need to be encode.
+ * - msg: strings need to be encoded.
  * - option: encode option.
  *
  * Return the morse code.

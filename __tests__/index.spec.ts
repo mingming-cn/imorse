@@ -2,14 +2,14 @@ import { encode, decode } from '../src';
 import { STANDARD } from '../src/const';
 import casual from 'casual';
 
-describe('XMorse', function() {
+describe('IMorse', function() {
   it('test morse unicode.', function() {
     // unicode
     expect(encode('I love you, 我爱你。')).toBe(
-      '../.-../---/...-/./-.--/---/..-/--..--/--...-....-...-/---..-...--...-/-..----.--...../--..........-.',
+      '.. .-.. --- ...- . -.-- --- ..- --..-- --...-....-...- ---..-...--...- -..----.--..... --..........-.',
     );
     expect(
-      decode('../.-../---/...-/./-.--/---/..-/--..--/--...-....-...-/---..-...--...-/-..----.--...../--..........-.'),
+      decode('.. .-.. --- ...- . -.-- --- ..- --..-- --...-....-...- ---..-...--...- -..----.--..... --..........-.'),
     ).toBe('ILOVEYOU,我爱你。');
   });
 
@@ -19,11 +19,11 @@ describe('XMorse', function() {
       expect(decode(STANDARD[k].replace(/0/g, '.').replace(/1/g, '-'))).toBe(k);
     }
     // combine
-    expect(encode('I love you.')).toBe('../.-../---/...-/./-.--/---/..-/.-.-.-');
-    expect(decode('../.-../---/...-/./-.--/---/..-/.-.-.-')).toBe('ILOVEYOU.');
+    expect(encode('I love you.')).toBe('.. .-.. --- ...- . -.-- --- ..- .-.-.-');
+    expect(decode('.. .-.. --- ...- . -.-- --- ..- .-.-.-')).toBe('ILOVEYOU.');
   });
 
-  it('test xmorse random text.', function() {
+  it('test imorse random text.', function() {
     // random test
     var w;
     for (var i = 10000; i >= 0; i--) {
@@ -32,7 +32,7 @@ describe('XMorse', function() {
     }
   });
 
-  it('test xmorse option.', function() {
+  it('test imorse option.', function() {
     // test options
     var option = {
       space: ' ',

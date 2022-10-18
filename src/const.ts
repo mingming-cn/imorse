@@ -66,7 +66,7 @@ export const REVERSED_STANDARD = reverseStandard(STANDARD);
 
 // default encode decode option
 export const DEFAULT_OPTION = {
-  space: '/',
+  space: ' ',
   short: '.',
   long: '-',
 };

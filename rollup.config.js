@@ -5,8 +5,8 @@ import typescript from 'rollup-plugin-typescript';
 module.exports = [{
   input: 'src/index.ts',
   output: {
-    file: 'dist/xmorse.min.js',
-    name: 'xmorse',
+    file: 'dist/imorse.min.js',
+    name: 'imorse',
     format: 'umd',
     sourcemap: false,
   },

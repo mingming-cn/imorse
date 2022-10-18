@@ -1,34 +1,34 @@
-# Xmorse
+# IMorse
 
-> **Xmorse** is a pure javascript(~1.5kb) library for encoding / decoding morse code messages, **unicode supported**.
+> **IMorse** is a pure javascript(~1.5kb) library for encoding / decoding morse code messages, **unicode supported**.
 
-[中文说明文档](README_ZH.md) | [Online DEMO 地址](https://atool.vip/morse) 
+[中文说明文档](README_ZH.md) | [Online DEMO 地址](https://toolb.cn/morse) 
 
-[![Build Status](https://github.com/hustcc/xmorse/workflows/build/badge.svg)](https://github.com/hustcc/xmorse/actions)
-[![Coverage Status](https://coveralls.io/repos/github/hustcc/xmorse/badge.svg?branch=master)](https://coveralls.io/github/hustcc/xmorse?branch=master)
-[![npm](https://img.shields.io/npm/v/xmorse.svg)](https://www.npmjs.com/package/xmorse)
-[![npm](https://img.shields.io/npm/dm/xmorse.svg)](https://www.npmjs.com/package/xmorse)
-[![npm](https://img.shields.io/npm/l/xmorse.svg)](https://www.npmjs.com/package/xmorse)
+[![Build Status](https://github.com/mingming-cn/imorse/workflows/build/badge.svg)](https://github.com/mingming-cn/imorse/actions)
+[![Coverage Status](https://coveralls.io/repos/github/mingming-cn/imorse/badge.svg?branch=master)](https://coveralls.io/github/mingming-cn/imorse?branch=master)
+[![npm](https://img.shields.io/npm/v/imorse.svg)](https://www.npmjs.com/package/imorse)
+[![npm](https://img.shields.io/npm/dm/imorse.svg)](https://www.npmjs.com/package/imorse)
+[![npm](https://img.shields.io/npm/l/imorse.svg)](https://www.npmjs.com/package/imorse)
 
 
 # 1. Install
 
-> **npm install xmorse**
+> **npm install imorse**
 
-Or download `dist/xmorse.min.js` source file。
+Or download `dist/imorse.min.js` source file。
 
 # 2. Import It
 
  - `Script` tag.
 
 ```html
-<script type="text/javascript" src="dist/xmorse.min.js"></script>
+<script type="text/javascript" src="dist/imorse.min.js"></script>
 ```
 
  - `ES6` style.
 
 ```ts
-import { decode, encode } from 'xmorse';
+import { decode, encode } from 'imorse';
 ```
 
 
@@ -37,9 +37,9 @@ import { decode, encode } from 'xmorse';
 There is only 2 API named `encode`, `decode`. For `encode(msg, [option])`, example:
 
 ```ts
-import { decode, encode } from 'xmorse';
+import { decode, encode } from 'imorse';
 // standart morse
-encode('Hello, Xmorse!');
+encode('Hello, IMorse!');
   
 // unicode
 encode('コンニチハ, セカイ!');
@@ -57,7 +57,7 @@ encode('越过长城，走向世界', option);
 For `decode(morse, [option])`, example:
 
 ```ts
-import { decode, encode } from 'xmorse';
+import { decode, encode } from 'imorse';
 decode('../.-../---/...-/./-.--/---/..-/-/---/---/--...-....-...-/-..---..-.-----/---..-...--...-/-..----.--.....');
 
 // option
@@ -81,4 +81,4 @@ $npm test
 
 # 5. LICENSE
 
-MIT@[hustcc](https://github.com/hustcc)
+Fork MIT@[hustcc](https://github.com/hustcc)
